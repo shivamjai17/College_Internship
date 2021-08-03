@@ -1,0 +1,20 @@
+
+h1{
+    position: relative;
+    text-align: center;
+}
+.main{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    width:400px;
+    border:1px solid rgb(136, 150, 11);
+    box-shadow: 10px 10px 5px;
+    background-image: url('templates\images (2).jfif');
+}
+form{
+    position:absolute;
+    margin:20px 0px 0px 100px;
+}

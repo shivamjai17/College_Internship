@@ -1,0 +1,41 @@
+body{
+    background-image: url('./images(2).jfif');
+}
+h1{
+    position: relative;
+    text-align: center;
+}
+.main{
+    position:absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    padding: 4px;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    width:400px;
+    border:1px solid rgb(136, 150, 11);
+    box-shadow: 0 7px 30px rgba(62, 9, 11, .3);
+    border-radius: 1rem;
+   
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 0 10px 0 5px;
+    
+}
+form{
+    position:absolute;
+    margin:20px 0px 0px 100px;
+
+}
+#Category{
+    border: 1px solid #fff;
+}
+#Pages{
+    margin: 5px;
+    border: 1px solid #fff;
+}
+#submit:hover{
+    background-color: blue;
+    transform: scale(1.2);
+}
