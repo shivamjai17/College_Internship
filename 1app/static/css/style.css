@@ -1,5 +1,5 @@
 body{
-    background-image: url('./images(2).jfif');
+    background:url("images.png");
 }
 h1{
     position: relative;
@@ -17,7 +17,7 @@ h1{
     border:1px solid rgb(136, 150, 11);
     box-shadow: 0 7px 30px rgba(62, 9, 11, .3);
     border-radius: 1rem;
-   
+    background-image: url("cf947b46283c10c47e3d5d945afb7053.gif");
     justify-content: space-between;
     margin-bottom: 15px;
     padding: 0 10px 0 5px;
@@ -39,3 +39,6 @@ form{
     background-color: blue;
     transform: scale(1.2);
 }
+
+
+

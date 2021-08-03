@@ -1,6 +1,6 @@
 from logging import debug
 from types import MethodType
-from flask import Flask, render_template, redirect,request,session,url_for
+from flask import Flask, render_template, redirect,request,session,url_for,send_file
 from numpy.core.fromnumeric import product
 import requests
 from bs4 import BeautifulSoup
@@ -61,9 +61,10 @@ def scrap(cate,pg):
             'Rating& Reviews':ratting
             }
         df=pd.DataFrame(details)
+        df.to_excel('scrap.xlsx')
     # return render_template('results.html',url=[details.to_html()])
-        return df.to_html(header=True,table_id="table")
-         
+        return render_template('results.html',tables=[df.to_html(classes='d')])
+
         
     name=[]
     brand=[]
@@ -106,8 +107,10 @@ def scrap(cate,pg):
             'Off':off,
             }  
         df=pd.DataFrame(details)
-        # return render_template('results.html',url=[details.to_html()])
-        return df.to_html(header=True,table_id="table")
+        df.to_excel('scrap2.xlsx')
+        return render_template('results1.html',tables=[df.to_html(classes='d')])
+    # return render_template('results.html',url=[details.to_html()])
+       
         
     starrat=[]
     name=[]
@@ -156,8 +159,24 @@ def scrap(cate,pg):
             'Review':review
             }       
         df=pd.DataFrame(details)
+        df.to_excel('scrap3.xlsx')
+        return render_template('results2.html',tables=[df.to_html(classes='d')])
     # return render_template('results.html',url=[details.to_html()])
-        return df.to_html(header=True,table_id="table") 
+        
+
+       
+@app.route('/download')
+def download_file1():
+    t="scrap.xlsx"
+    return send_file(t,as_attachment=True)      
+@app.route('/download')
+def download_file2():
+    q="scrap2.xlsx"
+    return send_file(q,as_attachment=True)        
+@app.route('/download')
+def download_file3():
+    q="scrap3.xlsx"
+    return send_file(q,as_attachment=True)             
       
 @app.route('/submit',methods=['GET','POST'])
 def submit():

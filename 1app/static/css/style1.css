@@ -1,0 +1,48 @@
+body{
+    background-color: black;
+}
+table.dataframe, .dataframe th, .dataframe td {
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid #C8C8C8;
+    border-collapse: collapse;
+    text-align:left;
+    padding: 10px;
+    margin-bottom: 40px;
+    font-size: 0.9em;
+    color: white;
+  }
+  .one{
+    position: fixed;
+    right: 0%;
+    top: 29px;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    }
+    .one:after {
+        content: "";
+        background: #f1f1f1;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px !important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+      }
+      .one:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+      }
