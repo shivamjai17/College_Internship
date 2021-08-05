@@ -1,15 +1,21 @@
 body{
-    background:url("images.png");
-}
+    background-image: url("cf947b46283c10c47e3d5d945afb7053.gif");
+    background-color:whitesmoke;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
 h1{
     position: relative;
     text-align: center;
 }
 .main{
+    background-color: black;
+    color:white;
     position:absolute;
     display: flex;
-    top: 50%;
-    left: 50%;
+    top: 300px;
+    left: 1150px;
     padding: 4px;
     transform: translate(-50%,-50%);
     height: 300px;
@@ -17,7 +23,7 @@ h1{
     border:1px solid rgb(136, 150, 11);
     box-shadow: 0 7px 30px rgba(62, 9, 11, .3);
     border-radius: 1rem;
-    background-image: url("cf947b46283c10c47e3d5d945afb7053.gif");
+  
     justify-content: space-between;
     margin-bottom: 15px;
     padding: 0 10px 0 5px;
@@ -29,14 +35,30 @@ form{
 
 }
 #Category{
+    margin-top: 3px;
     border: 1px solid #fff;
+    size: 1rem;
 }
 #Pages{
-    margin: 5px;
+    margin: 20px;
     border: 1px solid #fff;
 }
+#submit{
+    size: 1rem;
+    margin-top: 30px;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 1rem;
+    color: #FFFFFF;
+    left: 10px;
+    padding: 20px;
+    border-radius: 2px;
+    width: 100px;
+    text-align: center;
+}
 #submit:hover{
-    background-color: blue;
+   
+    
     transform: scale(1.2);
 }
 

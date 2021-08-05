@@ -46,3 +46,6 @@ table.dataframe, .dataframe th, .dataframe td {
         opacity: 1;
         transition: 0s
       }
+      a{
+        color: honeydew;
+      }

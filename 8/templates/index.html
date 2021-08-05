@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web scrapping tool of snapdeal for sports</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='./sun.css')}}">
+</head>
+
+<body>
+    <img src="https://source.unsplash.com/1300x600/?3D">
+    <header>
+        <h1>Web scrapping tool of snapdeal for sports </h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Team members</a>
+        <a href="#">Help</a>
+        <a href="#">contact us</a>
+        <a href="#">about us</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Name</h2>
+            <form action="/submit" method="POST"> 
+                <label for"Page">Page:</label><br>
+                <input type="text" id='page' name='Page' value="0"><br>
+                <label for"Category">Category:</label>
+                <input type="text" id='category' name='Category' value="enter category">
+                <input type="submit" value="submit">
+              </form>
+            <br>
+            <h2>Category
+            </h2>
+            <select name="card type" id="card_type">
+                <option value="">--Sport Accessories</option>
+                <option value="Boxing">Boxing</option>
+                <option value="Badminton">Badminton</option>
+                <option value="Cricket">Cricket</option>
+                <option value="Football">Football</option>
+                <option value="Basketball">Basketball</option>
+                <option value="Hockey">Hockey</option>
+                <option value="other">other</option>
+            </select>
+            <br>
+            <h2>Pages</h2>
+            
+
+
+        </section>
+    </main>
+
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Refund Policy</a>
+        <a href="#">&copy; 2020 | Web Scrapping </a>
+    </footer>
+
+</body>
+
+</html>

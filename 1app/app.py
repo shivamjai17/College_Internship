@@ -8,7 +8,7 @@ import pandas as pd
 from werkzeug.datastructures import Range
 
 
-app = Flask(__name__)
+app = Flask(__name__,static_url_path='/static')
 @app.route('/')
 def welcome():
     return render_template('index.html')
@@ -54,7 +54,7 @@ def scrap(cate,pg):
     if len(name)>1:     
         details={
             'Title':name,
-            'Price':mrp,
+            'Price':price,
             'MRP':mrp,
             'star Rating':nrat,
             'Off':off,
