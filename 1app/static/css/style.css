@@ -1,69 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
 body{
     background-image: url("cf947b46283c10c47e3d5d945afb7053.gif");
     background-color:whitesmoke;
     background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
     position: relative;
   }
 
-h1{
-    position: relative;
-    text-align: center;
-}
-.main{
-    background-color: black;
-    color:white;
-    position:absolute;
-    display: flex;
-    top: 300px;
-    left: 1150px;
-    padding: 4px;
-    transform: translate(-50%,-50%);
-    height: 300px;
-    width:400px;
-    border:1px solid rgb(136, 150, 11);
-    box-shadow: 0 7px 30px rgba(62, 9, 11, .3);
-    border-radius: 1rem;
+  span {
+    position: absolute;
+    left: 40%;
+    top: 0%;
+
+    display: block;
+    color: #cf1b1b;
+    font-size: 45px;
+    letter-spacing: 8px;
+    cursor: pointer;
+  }
   
-    justify-content: space-between;
-    margin-bottom: 15px;
-    padding: 0 10px 0 5px;
-    
-}
-form{
-    position:absolute;
-    margin:20px 0px 0px 100px;
+  span::before {
+    content: "WEBSCRAPPING";
+    position: absolute;
+    color: transparent;
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent 0,
+      transparent 2px,
+      white 2px,
+      white 4px
+    );
 
-}
-#Category{
-    margin-top: 3px;
-    border: 1px solid #fff;
-    size: 1rem;
-}
-#Pages{
-    margin: 20px;
-    border: 1px solid #fff;
-}
-#submit{
-    size: 1rem;
-    margin-top: 30px;
-    background-color: #4CAF50;
-    border: none;
-    font-size: 1rem;
-    color: #FFFFFF;
+    webkit-background-clip: text;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+    transition: 1s;
+  }
+  
+  span::after {
+    content: "WEBSCRAPPING";
+    position: absolute;
+    color: transparent;
+    background-image: repeating-linear-gradient(
+      135deg,
+      transparent 0,
+      transparent 2px,
+      white 2px,
+      white 4px
+    );
+    -webkit-background-clip: text;
+    top: 0px;
+    left: 0px;
+    transition: 1s;
+  }
+  
+  span:hover:before {
+    top: 10px;
     left: 10px;
-    padding: 20px;
-    border-radius: 2px;
-    width: 100px;
-    text-align: center;
+  }
+  
+  span:hover:after {
+    top: -10px;
+    left: -10px;
+  } 
+  
+  
+.form {
+  position: absolute;
+  top: 126px;
+  right: 170px;
+  background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 350px;
+  padding: 20px;
+  width: 320px;
 }
-#submit:hover{
-   
-    
-    transform: scale(1.2);
+.title {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.subtitle {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
 }
 
 
+.ic1 {
+  margin-top: 40px;
+}
 
+.ic2 {
+  margin-top: 30px;
+}
 .input-container {
     height: 50px;
     position: relative;
@@ -126,4 +163,26 @@ form{
   
   .input:focus ~ .placeholder {
     color: #dc2f55;
+  }
+  .submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 22px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .submit:active {
+    background-color: #06b;
+  }
+  .submit:hover{
+    background-color:#eee;
+    color: #06b;
   }

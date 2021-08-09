@@ -1,8 +1,9 @@
 body{
-    background-color: black;
+  background-color: #15172b;
 }
+
 table.dataframe, .dataframe th, .dataframe td {
-    background-color: black;
+    background-color: #15172b;
     border: none;
     border-bottom: 1px solid #C8C8C8;
     border-collapse: collapse;
@@ -16,7 +17,7 @@ table.dataframe, .dataframe th, .dataframe td {
     position: fixed;
     right: 0%;
     top: 29px;
-    background-color: #4CAF50;
+    background-color: #08d;
     border: none;
     font-size: 28px;
     color: #FFFFFF;
@@ -48,4 +49,5 @@ table.dataframe, .dataframe th, .dataframe td {
       }
       a{
         color: honeydew;
+        text-decoration: none;
       }
